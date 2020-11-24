@@ -9,9 +9,19 @@ class GamesController < ApplicationController
   end
 
   def create
+    @library_game = Game.new(game_params)
+    @library_game.fetch_data
+    @library_game.save
+    redirect_to library_path
   end
 
   def destroy
+  end
+
+private
+
+  def game_params
+    params.require(:game).permit(:data)
   end
 
 end

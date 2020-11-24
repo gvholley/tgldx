@@ -1,0 +1,32 @@
+<% if @library_games.exists? %>
+<% @library_games.map(&:to_giant_bomb_game).each do |game| %>
+
+<div class="wrapper">
+    <div class="product-img">
+      <%= image_tag game.image['medium_url'], class: "cover"%>
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1><%= game.name %></h1>
+        <% if game.platforms === nil %>
+    <h2>Platform Unknown (<%= game.original_release_date.to_s[0..3] %>)</h2>
+    <% else %>
+    <h2><%= game.platforms[0]['name'] %> (<%= game.original_release_date.to_s[0..3] %>)</h2>
+    <% end %>
+        <p><%= game.deck %> </p>
+      </div>
+      <div class="product-price-btn">
+           <button type="button"> Add to Library </button>
+
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+  </div>
+
+<% else %>
+  <div class="container">
+    <div class="message-body">You haven't added any games to your library yet. <%= link_to 'Add some', root_path %>.</div>
+  </div>
+  <% end %>

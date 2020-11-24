@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/games', to: 'games#index', as: :index
   get '/user/:id', to: 'user#show'
+  resource :user, only: [] do
+  resources :games, only: [:create, :destroy]
+end
+  get '/user/:id/library', to: 'library#index', as: :library
+  post '/user/:id/library', to: 'games#create'
+  delete 'user/:id/library:id', to: 'games#destroy'
 end
