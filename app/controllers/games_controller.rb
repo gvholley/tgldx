@@ -16,6 +16,9 @@ class GamesController < ApplicationController
   end
 
   def destroy
+    @library_game = GiantBomb::Game.detail(params[:id])
+    @library_game.destroy
+    redirect_to library_path
   end
 
 private

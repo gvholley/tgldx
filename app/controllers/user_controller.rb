@@ -4,6 +4,6 @@ class UserController < ApplicationController
   end
 
   def games
-
+    @game = GiantBomb::Game.detail(params[:id])
   end
 end

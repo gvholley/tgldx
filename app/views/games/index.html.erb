@@ -14,9 +14,10 @@
     <% end %>
     <p><%= game['deck'] %></p>
     </div>
+
     <div class="product-price-btn">
 
-       <button type="button"> Add to Library </button>
+       <button type="button"> <%= link_to 'Add to Library', create_path(create: {user_id: current_user.id library_game: library_game}), method: :post %> </button>
 
       </div>
     </div>

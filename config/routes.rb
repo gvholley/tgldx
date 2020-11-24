@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   resources :games, only: [:create, :destroy]
 end
   get '/user/:id/library', to: 'library#index', as: :library
-  post '/user/:id/library', to: 'games#create'
-  delete 'user/:id/library:id', to: 'games#destroy'
+  post '/user/:id/library', to: 'games#create', as: :create
+  delete 'user/:id/library:id', to: 'games#destroy', as: :destroy
 end
