@@ -8,4 +8,10 @@ class GamesController < ApplicationController
   @game = GiantBomb::Game.detail(params[:id])
   end
 
+  def create
+  end
+
+  def destroy
+  end
+
 end

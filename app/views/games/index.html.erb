@@ -1,0 +1,26 @@
+<div class="cards">
+  <% @games.each do |game| %>
+  <div class="wrapper">
+    <div class="product-img">
+  <%= image_tag game['image']['medium_url'], class: "cover"%>
+    </div>
+  <div class="product-info">
+      <div class="product-text">
+    <h1><%= game['name'] %></h1>
+    <% if game['platforms'] === nil %>
+    <h2>Platform Unknown (<%= game['original_release_date'].to_s[0..3] %>)</h2>
+    <% else %>
+    <h2><%= game['platforms'][0]['name'] %> (<%= game['original_release_date'].to_s[0..3] %>)</h2>
+    <% end %>
+    <p><%= game['deck'] %></p>
+    </div>
+    <div class="product-price-btn">
+
+       <button type="button"> Add to Library </button>
+
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+  </div>
