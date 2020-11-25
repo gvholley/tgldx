@@ -11,7 +11,7 @@ class GamesController < ApplicationController
   def create
     @library_game = Game.new(game_params)
     @library_game.fetch_data
-    @library_game.save
+    @library_game.save!
     redirect_to library_path
   end
 

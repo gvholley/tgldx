@@ -8,5 +8,6 @@ class User < ApplicationRecord
 
   def has_game?(game)
     games.where(id: game.id).exist?
+    #games.include?(game)
   end
 end

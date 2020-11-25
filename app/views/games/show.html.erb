@@ -1,0 +1,17 @@
+<div class="cards">
+
+  <div class="card">
+  <%= image_tag @game.image['medium_url'], class: "cover"%>
+  <div class="container">
+    <h2><%= @game.name %></h2>
+    <p><%= @game.deck %></p>
+    <p><%= @game.id %></p>
+    <% if @game.platforms === nil %>
+    <p>Platform Unknown</p>
+    <% else %>
+    <p><%= @game.platforms[0]['name'] %></p>
+    <% end %>
+    <p><%= @game.original_release_date.to_s[0..3] %></p>
+  </div>
+</div>
+  </div>
