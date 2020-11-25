@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'library_game/index'
   devise_for :users
   root to: 'pages#home'
   get '/games', to: 'games#index', as: :index
