@@ -17,7 +17,7 @@
 
     <div class="product-price-btn">
 
-       <button type="button"> <%= link_to 'Add to library', create_path(current_user, game: game), method: :post %> </button>
+       <button type="button"> <%= link_to 'Add to library', create_path(current_user, game_id: game['id']), method: :post %> </button>
 
       </div>
     </div>

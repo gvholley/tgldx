@@ -16,7 +16,7 @@
         <p><%= game.deck %> </p>
       </div>
       <div class="product-price-btn">
-           <button type="button"> Add to Library </button>
+           <button type="button"> <%= link_to 'Remove from Library', user_game_path(game.id), method: :delete %> </button>
 
       </div>
     </div>
