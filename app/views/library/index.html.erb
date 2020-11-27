@@ -1,3 +1,4 @@
+<div class="cards">
 <% if @library_games.exists? %>
 <% @library_games.map(&:to_giant_bomb_game).each do |game| %>
 
@@ -30,3 +31,4 @@
     <div class="message-body">You haven't added any games to your library yet. <%= link_to 'Add some', root_path %>.</div>
   </div>
   <% end %>
+</div>

@@ -19,10 +19,7 @@ class GamesController < ApplicationController
   end
 
   def destroy
-
-    library_game = current_user.library_games.find_by(game_id: params[:id])
-    #@library_game = GiantBomb::Game.detail(params[:id])
-    library_game.destroy
+    current_user.games.destroy(params[:game_id])
     redirect_to library_path
   end
 
