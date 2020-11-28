@@ -12,6 +12,36 @@
 @import "components/index";
 @import "pages/index";
 
+//colors
+$famired: #C62F36;
+$famigold: #846E20;
+$famiwhite: #FCFCFC;
+$famigrey: #777777;
+$famidarkred: #940A24;
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: image-url('gameheader.jpg');
+  color: white;
+}
+
+.centering {
+  text-align: center;
+}
+
+.content {
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+}
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

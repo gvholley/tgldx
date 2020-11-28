@@ -1,18 +1,103 @@
-<div class="search-font"><h1>Build your Collection</h1></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 row">
-          <%= form_tag index_path, method: :get do %>
-          <div class="col-12 col-sm pr-sm-0">
-            <%= text_field_tag [:query],
-              params[:query],
-              class: "form-control input-lg",
-              id: "typed-text" %>
-          </div>
-          <div class="input-group-btn ml-3">
-            <%= submit_tag "Search", class: "btn btn-primary" %>
-          </div>
-          <% end %>
-        </div>
+<div class="jumbotron centering">
+  <div class="content">
+  <div class="search-font"><h1>Find Your Favorite Games</h1></div>
+
+  <%= form_tag index_path, method: :get do %>
+
+  <%= text_field_tag [:query],
+  params[:query],
+  class: "form-control input-lg",
+    id: "typed-text" %>
+
+    <div class="input-group-btn ml-3">
+      <%= submit_tag "Search", class: "btn btn-primary" %>
+    </div>
+  </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="wrapper">
+    <div class="product-img">
+  <img src="https://giantbomb1.cbsistatic.com/uploads/scale_medium/8/82063/2946176-smobox.jpg" class="cover">
+    </div>
+  <div class="product-info">
+      <div class="product-text">
+    <h1>Super Mario Odyssey</h1>
+    <h2>NINTENDO SWITCH (2017)</h2>
+
+    <p>Nintendo's favorite plumber and his new hat-shaped companion travel far beyond the Mushroom Kingdom in this Switch-exclusive 3D platformer.</p>
+    </div>
+
+    <div class="product-price-btn">
+
+       <button type="button"> Add to Library </button>
+
       </div>
     </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="product-img">
+  <img src="https://giantbomb1.cbsistatic.com/uploads/scale_medium/8/87790/1814649-box_ffttwotl.png" class="cover">
+    </div>
+  <div class="product-info">
+      <div class="product-text">
+    <h1>Final Fantasy Tactics: The War of the Lions</h1>
+    <h2>PLAYSTATION PORTABLE (2007)</h2>
+
+    <p>The game tells the story of a young hero, Ramza Beoulve, and his struggle to protect his beloved ones from the evil Lucavi. The story takes place around the War of the Lions, a conflict occurring due to the death of the King Ondorria, Lord of Ivalice.</p>
+    </div>
+
+    <div class="product-price-btn">
+
+       <button type="button"> Add to Library </button>
+
+      </div>
+    </div>
+  </div>
+
+<div class="wrapper">
+    <div class="product-img">
+  <img src="https://giantbomb1.cbsistatic.com/uploads/scale_medium/9/93770/2371208-genesis_megabomberman.jpg" class="cover">
+    </div>
+  <div class="product-info">
+      <div class="product-text">
+    <h1>Mega Bomberman</h1>
+    <h2>GENESIS (1994)</h2>
+
+    <p>Mega Bomberman is the name for the Sega Genesis release of the TurboGrafx-16 game, Bomberman '94, and is the third release in the Bomberman series.</p>
+    </div>
+
+    <div class="product-price-btn">
+
+       <button type="button"> Add to Library </button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="product-img">
+  <img src="https://giantbomb1.cbsistatic.com/uploads/scale_medium/0/4938/609469-maniac_mansion_box_front_6570x8262.jpg" class="cover">
+    </div>
+  <div class="product-info">
+      <div class="product-text">
+    <h1>Maniac Mansion</h1>
+    <h2>AMIGA (1987)</h2>
+
+    <p>Maniac Mansion is a graphic adventure game originally released in 1987 by Lucasfilm Games. When the innocent Sandy is kidnapped by the maniacal Dr. Fred, it's up to her boyfriend Dave and his friends to her from certain death!</p>
+    </div>
+
+    <div class="product-price-btn">
+
+       <button type="button"> Add to Library </button>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
