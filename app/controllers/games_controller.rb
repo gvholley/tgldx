@@ -19,7 +19,7 @@ class GamesController < ApplicationController
   end
 
   def destroy
-    current_user.games.destroy(params[:game_id])
+    current_user.games.where(game_id: params[:id]).destroy_all
     redirect_to library_path
   end
 
