@@ -9,5 +9,5 @@ Rails.application.routes.draw do
 end
   get '/user/:id/library', to: 'library#index', as: :library
   post '/user/:id/library', to: 'games#create', as: :create
-  delete 'user/:id/library:id', to: 'games#destroy', as: :destroy
+  delete 'user/:id/library', to: 'games#destroy', as: :destroy
 end
