@@ -10,7 +10,7 @@
     id: "typed-text" %>
 
     <div class="input-group-btn ml-3">
-      <%= submit_tag "Search", class: "btn btn-primary" %>
+      <%= submit_tag "Search", class: "btn goldbutton mt-3" %>
     </div>
   </div>
     <% end %>
@@ -34,7 +34,7 @@
 
     <div class="product-price-btn">
 
-       <button type="button"> <%= link_to 'Add to library', create_path(current_user, game_id: '56733'), method: :post %> </button>
+       <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '56733'), method: :post %>
 
       </div>
     </div>
@@ -54,7 +54,7 @@
 
     <div class="product-price-btn">
 
-       <button type="button"> <%= link_to 'Add to library', create_path(current_user, game_id: '27994'), method: :post %> </button>
+      <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '27994'), method: :post %>
 
       </div>
     </div>
@@ -74,7 +74,7 @@
 
     <div class="product-price-btn">
 
-       <button type="button"> <%= link_to 'Add to library', create_path(current_user, game_id: '18127'), method: :post %> </button>
+       <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '18127'), method: :post %>
 
       </div>
     </div>
@@ -94,7 +94,7 @@
 
     <div class="product-price-btn">
 
-       <button type="button"> <%= link_to 'Add to library', create_path(current_user, game_id: '2037'), method: :post %> </button>
+       <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '2037'), method: :post %>
 
       </div>
     </div>

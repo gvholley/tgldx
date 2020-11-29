@@ -1,3 +1,4 @@
+<h1 class="title">Library</h1>
 <div class="cards">
 <% if @library_games.exists? %>
 <% @library_games.map(&:to_giant_bomb_game).each do |game| %>
@@ -17,7 +18,7 @@
         <p><%= game.deck %> </p>
       </div>
       <div class="product-price-btn">
-           <button type="button"> <%= link_to 'Remove from Library', user_game_path(game.id), method: :delete %> </button>
+           <%= link_to '<button type="button">Remove from library</button>'.html_safe, user_game_path(game.id), method: :delete %>
 
       </div>
     </div>
