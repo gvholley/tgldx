@@ -19,6 +19,10 @@ $famiwhite: #FCFCFC;
 $famigrey: #777777;
 $famidarkred: #940A24;
 
+body {
+  background-color: $famidarkred;
+}
+
 .jumbotron {
   display: flex;
   flex-direction: column;
@@ -86,6 +90,7 @@ $famidarkred: #940A24;
   float: left;
   height: 350px;
   width: 240px;
+  background-color: black;
   display: flex;
   align-items: center;
 }
@@ -178,13 +183,13 @@ span {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  background-color: #9cebd5;
+  background-color: $famigold;
   cursor: pointer;
   outline: none;
 }
 
 .product-price-btn button:hover {
-  background-color: #79b0a1;
+  background-color: #615018;
 }
 
 .product-price-btn a {
@@ -193,3 +198,9 @@ span {
     text-decoration: none;
   }
 }
+
+.title {
+  color: white;
+  text-align: center;
+}
+

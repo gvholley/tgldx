@@ -1,3 +1,18 @@
+
+<%= form_tag index_path, method: :get do %>
+
+  <%= text_field_tag [:query],
+  params[:query],
+  class: "form-control col-md-6",
+    id: "typed-text" %>
+
+    <div class="input-group-btn ml-3">
+      <%= submit_tag "Search", class: "btn btn-primary", id: "button-addon2" %>
+    </div>
+    <% end %>
+
+
+
 <div class="cards">
   <% @games.each do |game| %>
   <div class="wrapper">
