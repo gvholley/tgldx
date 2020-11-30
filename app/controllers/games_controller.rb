@@ -15,11 +15,13 @@ class GamesController < ApplicationController
     @library_game.save!
     current_user.build_library
     current_user.library.games << @library_game
+    flash[:notice] = "Added to library!"
     redirect_to library_path
   end
 
   def destroy
     current_user.games.find(params[:id]).destroy
+    flash[:notice] = "Removed from library!"
     redirect_to library_path(current_user)
   end
 

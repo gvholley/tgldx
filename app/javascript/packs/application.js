@@ -21,14 +21,20 @@ require("channels")
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
-
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui/widgets/sortable
+//= require rails_sortable
 // External imports
 import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { loadDynamicBannerText } from '../components/search-bar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+
+  loadDynamicBannerText();
 });

@@ -20,6 +20,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 gem 'giantbomb-api', '~> 1.6.0'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'rails_sortable'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

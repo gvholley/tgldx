@@ -1,12 +1,12 @@
 <div class="jumbotron centering">
   <div class="content">
-  <div class="search-font"><h1>Find Your Favorite Games</h1></div>
+  <div class="search-font"><h1 class="title">Find Your Favorite Games</h1></div>
 
   <%= form_tag index_path, method: :get do %>
 
   <%= text_field_tag [:query],
   params[:query],
-  class: "form-control input-lg",
+  class: "form-control input-lg home_search",
     id: "typed-text" %>
 
     <div class="input-group-btn ml-3">

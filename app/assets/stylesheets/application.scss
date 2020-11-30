@@ -12,6 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 //colors
 $famired: #C62F36;
 $famigold: #846E20;
@@ -21,6 +23,7 @@ $famidarkred: #940A24;
 
 body {
   background-color: $famidarkred;
+  font-family: 'Comfortaa', cursive;
 }
 
 .jumbotron {
@@ -113,7 +116,8 @@ body {
 
 .product-text h1,
 .product-price-btn p {
-  font-family: 'Bentham', serif;
+  font-family: 'Comfortaa', cursive;
+  font-size: 26px;
 }
 
 .product-text h2 {
@@ -173,7 +177,7 @@ span {
   box-sizing: border-box;
   border: transparent;
   border-radius: 60px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -198,6 +202,7 @@ span {
 .title {
   color: white;
   text-align: center;
+  font-family: 'Comfortaa', cursive;
 }
 
 .goldbutton {
