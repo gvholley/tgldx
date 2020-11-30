@@ -1,8 +1,8 @@
 <h1 class="title">Library</h1>
 <div class="cards">
 <% if @library_games.exists? %>
-<% @library_games.map(&:to_giant_bomb_game).each do |game| %>
-
+<% @library_games.each do |library_game| %>
+<% game = library_game.to_giant_bomb_game %>
 <div class="wrapper">
     <div class="product-img">
       <%= image_tag game.image['medium_url'], class: "cover"%>
@@ -18,7 +18,7 @@
         <p><%= game.deck %> </p>
       </div>
       <div class="product-price-btn">
-           <%= link_to '<button type="button">Remove from library</button>'.html_safe, destroy_path(current_user, game_id: game.id), method: :delete %>
+           <%= link_to '<button type="button">Remove from library</button>'.html_safe, user_game_path(library_game.id), method: :delete %>
 
       </div>
     </div>

@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   get '/games', to: 'games#index', as: :index
   get '/user/:id', to: 'user#show'
   resource :user, only: [] do
-  resources :games, only: [:create, :destroy]
-end
+    resources :games, only: [:create, :destroy]
+  end
   get '/user/:id/library', to: 'library#index', as: :library
   post '/user/:id/library', to: 'games#create', as: :create
-  delete 'user/:id/library', to: 'games#destroy', as: :destroy
+  #delete 'user/:id/library', to: 'games#destroy', as: :destroy
 end
