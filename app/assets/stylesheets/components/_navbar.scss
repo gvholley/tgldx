@@ -1,6 +1,12 @@
+$famired: #C62F36;
+$famigold: #846E20;
+$famiwhite: #FCFCFC;
+$famigrey: #777777;
+$famidarkred: #940A24;
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: $famidarkred;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +14,9 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 200px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: white;
 }
