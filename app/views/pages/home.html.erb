@@ -33,9 +33,11 @@
     </div>
 
     <div class="product-price-btn">
-
+      <% if user_signed_in? %>
        <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '56733'), method: :post %>
-
+      <% else %>
+      <%= link_to '<button type="button">Add to library</button>'.html_safe, new_user_session_path %>
+      <% end %>
       </div>
     </div>
   </div>
@@ -53,9 +55,11 @@
     </div>
 
     <div class="product-price-btn">
-
+      <% if user_signed_in? %>
       <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '27994'), method: :post %>
-
+      <% else %>
+      <%= link_to '<button type="button">Add to library</button>'.html_safe, new_user_session_path %>
+      <% end %>
       </div>
     </div>
   </div>
@@ -73,9 +77,11 @@
     </div>
 
     <div class="product-price-btn">
-
+      <% if user_signed_in? %>
        <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '18127'), method: :post %>
-
+      <% else %>
+      <%= link_to '<button type="button">Add to library</button>'.html_safe, new_user_session_path %>
+      <% end %>
       </div>
     </div>
   </div>
@@ -93,9 +99,11 @@
     </div>
 
     <div class="product-price-btn">
-
+      <% if user_signed_in? %>
        <%= link_to '<button type="button">Add to library</button>'.html_safe, create_path(current_user, game_id: '2037'), method: :post %>
-
+       <% else %>
+      <%= link_to '<button type="button">Add to library</button>'.html_safe, new_user_session_path %>
+      <% end %>
       </div>
     </div>
   </div>

@@ -19,4 +19,15 @@ $famidarkred: #940A24;
 
 .navbar-light .navbar-nav .active > .nav-link {
   color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  &:hover {
+    color: white;
+  }
+
 }
