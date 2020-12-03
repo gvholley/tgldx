@@ -212,6 +212,7 @@ span {
   &:hover {
     color: white;
     background-color: #615018;
+    text-decoration: none;
   }
 }
 
@@ -236,5 +237,9 @@ span {
   &:hover {
     text-decoration: none;
   }
+}
+
+.message-body {
+  color: white;
 }
 
